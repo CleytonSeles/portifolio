@@ -15,7 +15,7 @@ function showSpinner() {
 }
 
 function checkPostgres() {
-  exec("docker exec postgres-dev pg_isready --host localhost", handleReturn);
+  exec("docker exec portifolio-dev pg_isready --host localhost", handleReturn);
   function handleReturn(error, stdout) {
     if (stdout.search("accepting connections") === -1) {
       process.stdout.write(`\r🟡 ${messageWaiting} ${showSpinner()}`);
