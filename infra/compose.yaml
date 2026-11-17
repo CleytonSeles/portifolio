@@ -1,6 +1,6 @@
 services:
   db:
-    container_name: "portfolio-dev"
+    container_name: "portifolio-dev"
     image: "postgres:16.0-alpine3.18"
     env_file:
       - ../.env.development
