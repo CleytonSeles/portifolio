@@ -1,6 +1,6 @@
 name: Automated Tests
 
-on: pull_requet
+on: pull_request
 
 jobs:
   jest:
